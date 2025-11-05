@@ -18,7 +18,7 @@ def get_gemini_sql_agent():
     )
 
     # --- Initialize Gemini model ---
-    api_key = os.getenv("GOOGLE_API_KEY") or "AIzaSyC4Y5A0263oYV8vmyqsisqBPN2oIGPUIhA"
+    api_key = os.getenv("GOOGLE_API_KEY") 
     llm = ChatGoogleGenerativeAI(
         model="gemini-2.5-flash",  # or "gemini-1.5-pro"
         google_api_key=api_key,
